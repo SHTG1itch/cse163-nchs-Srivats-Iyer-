@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
+  <title id="title">Resampling: split, select, summarize</title>
+  <desc id="desc">The six hourly totals are grouped by calendar day. September 2 has 10 plus 20 equals 30; September 3 has 30 plus 40 equals 70; September 4 has 50 plus 60 equals 110.</desc>
+  <rect width="900" height="350" rx="12" fill="#f8fafc"/>
+  <g font-family="system-ui, sans-serif" fill="#172b4d">
+    <text x="28" y="36" font-size="21" font-weight="700">Same three steps as groupby</text>
+    <text x="28" y="65" font-size="16">resample("D")["Total"].sum()</text>
+    <text x="28" y="108" font-size="17" font-weight="650">1. Split by calendar day</text>
+    <text x="346" y="108" font-size="17" font-weight="650">2. Select Total</text>
+    <text x="656" y="108" font-size="17" font-weight="650">3. Sum each group</text>
+    <rect x="24" y="126" width="280" height="58" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+    <rect x="24" y="195" width="280" height="58" rx="7" fill="#ccfbf1" stroke="#0f766e"/>
+    <rect x="24" y="264" width="280" height="58" rx="7" fill="#fef3c7" stroke="#a16207"/>
+    <g font-size="16">
+      <text x="40" y="150">Sep 2, 08:00  →  10</text><text x="40" y="173">Sep 2, 09:00  →  20</text>
+      <text x="40" y="219">Sep 3, 08:00  →  30</text><text x="40" y="242">Sep 3, 09:00  →  40</text>
+      <text x="40" y="288">Sep 4, 08:00  →  50</text><text x="40" y="311">Sep 4, 09:00  →  60</text>
+    </g>
+    <g font-size="25" text-anchor="middle">
+      <text x="326" y="165">→</text><text x="326" y="234">→</text><text x="326" y="303">→</text>
+      <text x="608" y="165">→</text><text x="608" y="234">→</text><text x="608" y="303">→</text>
+    </g>
+    <rect x="350" y="126" width="230" height="58" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+    <rect x="350" y="195" width="230" height="58" rx="7" fill="#ccfbf1" stroke="#0f766e"/>
+    <rect x="350" y="264" width="230" height="58" rx="7" fill="#fef3c7" stroke="#a16207"/>
+    <g font-size="22" text-anchor="middle"><text x="465" y="163">10 + 20</text><text x="465" y="232">30 + 40</text><text x="465" y="301">50 + 60</text></g>
+    <rect x="636" y="126" width="240" height="58" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+    <rect x="636" y="195" width="240" height="58" rx="7" fill="#ccfbf1" stroke="#0f766e"/>
+    <rect x="636" y="264" width="240" height="58" rx="7" fill="#fef3c7" stroke="#a16207"/>
+    <g font-size="18"><text x="654" y="161">2024-09-02</text><text x="654" y="230">2024-09-03</text><text x="654" y="299">2024-09-04</text></g>
+    <g font-size="22" font-weight="700" text-anchor="end"><text x="858" y="162">30</text><text x="858" y="231">70</text><text x="858" y="300">110</text></g>
+  </g>
+</svg>
