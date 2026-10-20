@@ -24,6 +24,7 @@ project:
   github: NCHS-CS/cse163-nchs
   toc:
     - file: README.md
+    - file: faq.md
     - file: style-guide.md
     - file: tbd.md
       hidden: true
@@ -83,8 +84,6 @@ project:
             - file: classwork/xgboost/04_xgboost_case_study.ipynb
     - title: Assignments
       children:
-        - file: assignments/processing.ipynb
-        - file: assignments/pokemon.ipynb
         - file: assignments/education.ipynb
         - file: assignments/mapping.ipynb
         - file: assignments/search.ipynb
